@@ -11,8 +11,9 @@ $('#login').click(function() {
     var loginGrtr = G$('John', 'Doe');
 
     //hides the login on the screen
-    $('#lgoindiv').hide();
+    $('#logindiv').hide();
 
     // fire off an HTML greeting
-    loginGrtr.setlang($('#lang').val()).HTMLGreeting('#greeting', true).log();
+    loginGrtr.setLang($('#lang').val()).HTMLGreeting('#greeting', true).log();
+
 });

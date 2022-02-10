@@ -43,7 +43,7 @@
 
         // retrieves messages from object baced on formal or informal properties
         greeting: function() {
-            return this.greeting[this.language] + ' ' + this.firstName + '!';
+            return greetings[this.language] + ' ' + this.firstName + '!';
         },
 
         formalGreeting: function() {
@@ -71,14 +71,6 @@
 
         log: function() {
             if (console) {
-                console.log(logMessages[this.language] + ': ' + this.fullName());
-            }
-
-            return this;
-        },
-
-        log: function() {
-            if(console) {
                 console.log(logMessages[this.language] + ': ' + this.fullName());
             }
 
