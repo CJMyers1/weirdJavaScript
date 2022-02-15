@@ -1,15 +1,15 @@
-var person = {
+let person = {
     firstname: 'John',
     lastname: 'Doe',
     getFullName: function() {
 
-        var fullname = this.firstname + ' ' + this.lastname;
+        let fullname = this.firstname + ' ' + this.lastname;
         return fullname;
 
     }
 }
 
-var logName = function(lang1, lang2) {
+let logName = function(lang1, lang2) {
 
     console.log('Logged: ' + this.getFullName());
     console.log('Arguments: ' + lang1 + ' ' + lang2);
@@ -17,7 +17,7 @@ var logName = function(lang1, lang2) {
 
 }
 
-var logPersonName = logName.bind(person);
+let logPersonName = logName.bind(person);
 logPersonName('en');
 
 logName.call(person, 'en', 'es');
@@ -32,7 +32,7 @@ logName.apply(person, ['en', 'es']);
 }).apply(person, ['en', 'es,']);
 
 //function borrowing
-var person2 = {
+let person2 = {
     firstname: 'Jane',
     lastname: 'Doe'
 }
@@ -43,8 +43,8 @@ console.log(person.getFullName(person2));
 function multiply(a, b) {
     return a*b;
 }
-var multiplyByTwo = multiply.bind(this, 2);
+let multiplyByTwo = multiply.bind(this, 2);
 console.log(multiplyByTwo(4));
 
-var multiplyByThree = multiply.bind(this, 3);
+let multiplyByThree = multiply.bind(this, 3);
 console.log(multiplyByThree(4));

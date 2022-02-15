@@ -1,5 +1,5 @@
 function waitThreeSeconds() {
-    var ms = 3000 + new Date().getTime();
+    let ms = 3000 + new Date().getTime();
     while (new Date() < ms){}
     console.log('finished funciton');
 }

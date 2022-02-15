@@ -1,4 +1,4 @@
-var person = {
+let person = {
     firstname: 'Default',
     lastname: 'Default',
     getFullName: function() {
@@ -6,7 +6,7 @@ var person = {
     }
 }
 
-var john = {
+let john = {
     firstname: 'John',
     lastname: 'Doe'
 }
@@ -14,20 +14,20 @@ var john = {
 // don't do this EVER! for demo purposes only!!!
 john.__proto__ = person;
 
-for (var prop in john) {
+for (let prop in john) {
     if (john.hasOwnProperty(prop)) {
         console.log(prop + ': ' + john[prop]);
     }
 }
 
-var jane = {
+let jane = {
     address: '111 Main St.',
     getFormalFullName: function() {
         return this.lastname = ', ' + this.firstname;
     }
 }
 
-var jim = {
+let jim = {
     getFirstName: function() {
         return firstname;   
     }

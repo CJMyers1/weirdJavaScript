@@ -1,6 +1,6 @@
 // Value (primitives)
-var a = 3;
-var b;
+let a = 3;
+let b;
 
 b = a;
 a = 2;
@@ -9,8 +9,8 @@ console.log(a);
 console.log(b);
 
 // reference for all objects
-var c = { greeting: 'hi' };
-var d;
+let c = { greeting: 'hi' };
+let d;
 
 d = c;
 c.greeting = 'hello'; // mutate

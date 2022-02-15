@@ -1,4 +1,4 @@
-var person = {
+let person = {
     firstname: 'Default',
     lastname: 'Default',
     getFullName: function() {
@@ -6,7 +6,7 @@ var person = {
     }
 }
 
-var john = {
+let john = {
     firstname: 'John',
     lastname: 'Doe'
 }
@@ -16,7 +16,7 @@ john.__proto__ = person;
 console.log(john.getFullName());
 console.log(john.firstname);
 
-var jane = {
+let jane = {
     firstname: 'Jane'
 }
 

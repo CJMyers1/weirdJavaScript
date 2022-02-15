@@ -1,8 +1,8 @@
 function buildFuncitons() {
 
-    var arr = [];
+    let arr = [];
 
-    for (var i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
 
         arr.push(
             function() {
@@ -14,7 +14,7 @@ function buildFuncitons() {
     return arr;
 }
 
-var fs = buildFuncitons()
+let fs = buildFuncitons()
 
 fs[0]();
 fs[1]();
@@ -22,9 +22,9 @@ fs[2]();
 
 function buildFuncitons2() {
 
-    var arr = [];
+    let arr = [];
 
-    for (var i = 0; i < 3; i++) {
+    for (let i = 0; i < 3; i++) {
         arr.push(
             (function(j) {
                 return function() {
@@ -37,7 +37,7 @@ function buildFuncitons2() {
     return arr;
 }
 
-var fs2 = buildFuncitons2();
+let fs2 = buildFuncitons2();
 
 fs2[0]();
 fs2[1]();

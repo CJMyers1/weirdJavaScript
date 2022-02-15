@@ -7,5 +7,5 @@ function a() {
     b();
 }
 
-var myVar = 1;
+let myVar = 1;
 a();

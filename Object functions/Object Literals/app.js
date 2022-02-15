@@ -1,4 +1,4 @@
-var Tony = {
+let Tony = {
     firstname: 'Tony',
     lastname: 'Alicea',
     address: {

@@ -1,4 +1,4 @@
-var a;
+let a;
 
 // looks for a value on internet
 

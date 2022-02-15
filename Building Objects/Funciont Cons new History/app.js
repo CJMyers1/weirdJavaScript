@@ -11,10 +11,10 @@ Person.prototype.getFullName = function() {
     return this.firstName + ' ' + this.lastname;
 }
 
-var john = new Person('John', 'Doe');
+let john = new Person('John', 'Doe');
 console.log(john);
 
-var jane = new Person('Jane', 'Does');
+let jane = new Person('Jane', 'Does');
 console.log(jane);
 
 Person.prototype.getFormalFullName = function() {

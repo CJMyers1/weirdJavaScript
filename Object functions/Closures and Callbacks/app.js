@@ -1,6 +1,6 @@
 function sayHiLater() {
 
-    var greeting = 'Hi!';
+    let greeting = 'Hi!';
 
     setTimeout(function() {
 
@@ -13,8 +13,8 @@ sayHiLater();
 
 function tellMeWhenDone(callback) {
 
-    var a = 1000;
-    var b = 2000;
+    let a = 1000;
+    let b = 2000;
 
     callback();
 

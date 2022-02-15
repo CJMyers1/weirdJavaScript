@@ -12,8 +12,8 @@ function makeGreeting(language) {
     }
 }
 
-var greetEnglish = makeGreeting('en');
-var greetSpanish = makeGreeting('es');
+let greetEnglish = makeGreeting('en');
+let greetSpanish = makeGreeting('es');
 
 greetEnglish('John', 'Doe');
 greetSpanish('John', 'Doe');

@@ -1,15 +1,15 @@
-var greet = 'Hello!';
-var greet = 'Hola!';
+let greet = 'Hello!';
+let greet = 'Hola!';
 
 console.log(greet);
 
-var english = {
+let english = {
     greeting: {
         basic: 'Hello!'
     }
 };
 
-var spanish = {};
+let spanish = {};
 
 spanish.greet = 'Hola!';
 

@@ -5,13 +5,13 @@ function greet(name) {
 greet('John');
 
 // use function experession
-var greetFunc = function(name) {
+let greetFunc = function(name) {
     console.log('Hello ' + name);
 };
 greetFunc('John');
 
 //use immediately invoked function expression (IIFE)
-var greeting = function(name) {
+let greeting = function(name) {
 
     return 'Hello ' + name;
 
@@ -20,11 +20,11 @@ var greeting = function(name) {
 console.log(greeting);
 
 // IIFE
-var firstname = 'John';
+let firstname = 'John';
 
 (function(name) {
 
-    var greeting = 'Inside IIFE: Hello';
+    let greeting = 'Inside IIFE: Hello';
     console.log(greeting + ' ' + name);
 
 }(firstname));

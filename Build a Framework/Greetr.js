@@ -1,27 +1,27 @@
 (function(global, $) {
 
     // 'new' an object set up
-    var Greetr = function(firstName, lastName, language) {
+    let Greetr = function(firstName, lastName, language) {
         return new Greetr.init(firstName, lastName, language);
     }
 
     // hidden for IIFE accessible
-    var supportedLangs = ['en', 'es'];
+    let supportedLangs = ['en', 'es'];
 
     // Informal Greeting
-    var greetings = {
+    let greetings = {
         en: 'Hello',
         es: 'Hola'
     };
 
     // Fromal Greeting
-    var formalGreetings = {
+    let formalGreetings = {
         en: 'Greetings',
         es: 'Saludos'
     };
 
     // logger messages
-    var logMessages = {
+    let logMessages = {
         en: 'Logged in',
         es: 'Inició sesión'
     };
@@ -52,7 +52,7 @@
 
         //chainable methods return their own containing object
         greet: function(formal) {
-            var msg;
+            let msg;
             // false if undefined or null
             if (formal) {
                 msg = this.formalGreeting();
@@ -96,7 +96,7 @@
             }
 
             // determins the message
-            var msg;
+            let msg;
             if (formal) {
                 msg = this.formalGreeting();
             }
@@ -115,7 +115,7 @@
     // Actual object is created here
     Greetr.init = function(firstName, lastName, language) {
 
-        var self = this;
+        let self = this;
         self.firstName = firstName || '';
         self.lastName = lastName || '';
         self.language = language || 'en';

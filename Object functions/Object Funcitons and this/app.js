@@ -1,27 +1,27 @@
 function a() {
     console.log(this);
-    this.newvariable = 'hello';
+    this.newletiable = 'hello';
 }
 
-var b = function() {
+let b = function() {
     console.log(this);
 }
 
 a();
 
-console.log(newvariable);
+console.log(newletiable);
 
 b();
 
-var c = {
+let c = {
     name: 'The c object',
     log: function() {
-        var self = this;
+        let self = this;
 
         self.name = 'Updated c object';
         console.log(self);
 
-        var setname = function(newname) {
+        let setname = function(newname) {
             self.name = newname;
         }
         setname('Updated again! The c object');

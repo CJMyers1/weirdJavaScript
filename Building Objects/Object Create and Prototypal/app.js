@@ -10,7 +10,7 @@ if(!Object.create) {
     };
 }
 
-var person = {
+let person = {
     firstname: 'Default',
     lastname: 'Default',
     greet: function() {
@@ -18,7 +18,7 @@ var person = {
     }
 }
 
-var john = Object.create(person);
+let john = Object.create(person);
 john.firstname = 'John';
 john.lastname = 'Does';
 console.log(john);

@@ -6,5 +6,5 @@ function greet(whattosay) {
 
 }
 
-var sayHi = greet('Hi');
+let sayHi = greet('Hi');
 sayHi('Tony');

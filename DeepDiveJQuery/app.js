@@ -1,2 +1,2 @@
-var q = $("ul.people li");
+let q = $("ul.people li");
 console.log(q);

@@ -1,4 +1,4 @@
-var people = [
+let people = [
     {
         //John
         firstname: 'John',

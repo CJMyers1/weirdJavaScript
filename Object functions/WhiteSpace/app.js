@@ -1,4 +1,4 @@
-var
+let
     // first name
     firstname,
 
@@ -9,7 +9,7 @@ var
     // en or es
     language;
 
-var person = {
+let person = {
     // first name
     firstname: 'John',
 
